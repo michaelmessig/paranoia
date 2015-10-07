@@ -9,9 +9,7 @@ platforms :rbx do
   gem 'rubinius-developer_tools'
 end
 
-rails = ENV['RAILS'] || '~> 4.2.0'
-
-gem 'rails', rails
+gem 'rails', github: 'rails/rails'
 
 # Specify your gem's dependencies in paranoia.gemspec
 gemspec
